@@ -103,13 +103,13 @@ async def on_ready( ):
                     title = "Novo jogo disponível"
 
                 # Create the embed
-                embed = discord.Embed( title = title, description = split[ 1 ], color = discord.Color.blue( ) )
+                embed = discord.Embed( title = title, description = split[ 1 ], color = discord.Color.blue( ), url = 'https://gaming.amazon.com/intro' )
                 
                 # Set the image
                 embed.set_image( url = split[ 2 ] )
 
                 # Send it
-                await channel.send( embed = embed, url = 'https://gaming.amazon.com/intro' )
+                await channel.send( embed = embed )
 
 # Run the client (put your token on the '')
 client.run( '' )
